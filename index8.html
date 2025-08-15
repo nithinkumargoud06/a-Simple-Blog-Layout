@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Layout</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+pjYdaaiAqCYQfLCWEyaXhW4J8pce5Jzbl5VbK1bZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom CSS for additional styling and overrides */
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter font */
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.05); /* Subtle shadow for navbar */
+        }
+        .blog-card {
+            border-radius: 10px; /* Rounded corners for cards */
+            overflow: hidden; /* Ensures image corners are rounded too */
+            box-shadow: 0 4px 12px rgba(0,0,0,.08); /* Stronger shadow for cards */
+            transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+        }
+        .blog-card:hover {
+            transform: translateY(-5px); /* Lift card on hover */
+        }
+        .blog-card img {
+            height: 200px; /* Fixed height for card images */
+            object-fit: cover; /* Cover the area without distortion */
+        }
+        .footer {
+            background-color: #343a40; /* Dark background for footer */
+            color: white; /* White text for footer */
+            padding: 30px 0;
+            border-top: 5px solid #007bff; /* Blue border on top of footer */
+        }
+        .footer .social-icon {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.2s ease-in-out;
+        }
+        .footer .social-icon:hover {
+            color: #007bff; /* Blue on hover for social icons */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">My Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content - Blog Posts -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5 fw-bold text-primary">Latest Blog Posts</h2>
+        <div class="row g-4">
+            <!-- Blog Post Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card blog-card h-100">
+                    <img src="https://placehold.co/600x400/007bff/ffffff?text=Travel+Adventures" class="card-img-top" alt="Travel Adventures">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Exploring the Wonders of Italy</h5>
+                        <p class="card-text text-muted mb-auto">Join me on a virtual journey through the picturesque landscapes and historic cities of Italy. From the canals of Venice to the ancient ruins of Rome, discover the magic.</p>
+                        <a href="#" class="btn btn-primary mt-3 align-self-start">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card blog-card h-100">
+                    <img src="https://placehold.co/600x400/28a745/ffffff?text=Tech+Innovations" class="card-img-top" alt="Tech Innovations">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">The Future of AI in Everyday Life</h5>
+                        <p class="card-text text-muted mb-auto">Artificial intelligence is rapidly transforming our world. This post delves into the latest AI innovations and how they are impacting our daily routines.</p>
+                        <a href="#" class="btn btn-success mt-3 align-self-start">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card blog-card h-100">
+                    <img src="https://placehold.co/600x400/ffc107/343a40?text=Food+Recipes" class="card-img-top" alt="Food Recipes">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Delicious Homemade Pasta Recipes</h5>
+                        <p class="card-text text-muted mb-auto">Learn to make authentic Italian pasta from scratch with these simple yet delicious recipes. Impress your friends and family with your culinary skills.</p>
+                        <a href="#" class="btn btn-warning mt-3 align-self-start">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post Card 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card blog-card h-100">
+                    <img src="https://placehold.co/600x400/6f42c1/ffffff?text=Personal+Growth" class="card-img-top" alt="Personal Growth">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Mindfulness for a Happier You</h5>
+                        <p class="card-text text-muted mb-auto">Discover the power of mindfulness and how it can significantly improve your mental well-being and overall happiness. Simple tips for daily practice.</p>
+                        <a href="#" class="btn btn-dark mt-3 align-self-start">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post Card 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card blog-card h-100">
+                    <img src="https://placehold.co/600x400/fd7e14/ffffff?text=Photography+Tips" class="card-img-top" alt="Photography Tips">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Mastering Smartphone Photography</h5>
+                        <p class="card-text text-muted mb-auto">You don't need an expensive camera to take stunning photos. Learn pro tips and tricks for capturing beautiful moments with just your smartphone.</p>
+                        <a href="#" class="btn btn-danger mt-3 align-self-start">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post Card 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card blog-card h-100">
+                    <img src="https://placehold.co/600x400/17a2b8/ffffff?text=Book+Reviews" class="card-img-top" alt="Book Reviews">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Top 5 Must-Read Books of the Year</h5>
+                        <p class="card-text text-muted mb-auto">Dive into this curated list of the year's most impactful and enjoyable books across various genres. Find your next great read here!</p>
+                        <a href="#" class="btn btn-info mt-3 align-self-start">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN (Bundle with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
