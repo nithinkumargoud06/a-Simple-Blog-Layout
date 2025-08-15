@@ -52,3 +52,7 @@ Bootstrap 5: A popular CSS framework for responsive and mobile-first front-end w
 Font Awesome: For scalable vector icons (social media icons in the footer).
 
 Output****
+
+<img width="1907" height="772" alt="Image" src="https://github.com/user-attachments/assets/1aabfd94-3dc4-44dc-b4d7-9dadf7324e1b" />
+
+<img width="1847" height="722" alt="Image" src="https://github.com/user-attachments/assets/d66aa311-ba44-490a-8b28-67a2ca2ba222" />
